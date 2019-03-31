@@ -155,6 +155,8 @@ Simulating additional AQM algorithms using this suite
     .
   }
 
+* To remove an AQM from the currently running list, In ''ScenarioImpl'' class, there is one array named m_AQM and an integer variable named m_nAQM. Need to delete the name of the AQM from m_AQM and reduce the value of m_nAQM by one.
+
 Scope and limitations of the suite
 **********************************
 
