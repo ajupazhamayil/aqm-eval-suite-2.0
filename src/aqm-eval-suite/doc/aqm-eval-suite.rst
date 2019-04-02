@@ -155,7 +155,20 @@ Simulating additional AQM algorithms using this suite
     .
   }
 
-* To remove an AQM from the currently running list, In ''ScenarioImpl'' class, there is one array named m_AQM and an integer variable named m_nAQM. Need to delete the name of the AQM from m_AQM and reduce the value of m_nAQM by one.
+Remove AQM algorithms from this suite
+*****************************************************
+* To remove an AQM from the suite, the RemoveAqm method of ``src/aqm-eval-suite/examples/aqm-eval-suite-runner.cc`` can be used. For example, to remove an AQM of typeId ``Red``, the main of ``aqm-eval-suite-runner.cc`` can be modified as shown in the code below:
+
+.. code-block:: c++
+
+  int main (int argc, char *argv[])
+
+  {
+    RemoveAqm ("Red");
+    .
+    .
+  }
+
 
 Scope and limitations of the suite
 **********************************
